@@ -1,0 +1,13 @@
+application: custom-tinywebdb
+version: 8
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /images
+  static_dir: images
+  secure: always
+
+- url: .*
+  script: main.app
